@@ -1,0 +1,18 @@
+{
+  "name": "sigfox-td12xx",
+  "version": "1.0.0",
+  "description": "driver for td12xx sigfox modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sigfox",
+    "td12xx"
+  ],
+  "author": "rudylacrete",
+  "license": "MIT",
+  "dependencies": {
+    "serialport": "^4.0.7"
+  }
+}
