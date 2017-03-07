@@ -1,9 +1,9 @@
 {
   "name": "sigfox-td12xx-driver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "driver for td12xx sigfox modules",
   "main": "index.js",
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/rudylacrete/sigfox-td12xx-driver"
   },
@@ -25,6 +25,6 @@
     "proxyquire": "1.7.11"
   },
   "engines": {
-    "node" : ">=6.10"
+    "node": ">=6.10"
   }
 }
