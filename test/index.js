@@ -70,3 +70,27 @@ describe('core features', function() {
     }).catch(done); // chain an extra catch to forward exceptions triggered by the last expectations
   });
 });
+
+describe('specific features', function() {
+  const Driver = proxyquire('../lib/td12xxDriver.js', {serialport: SerialportMock});
+
+  it('should throw an error if the sendBytes got a non-buffer', function() {
+    let d = new Driver('test');
+    expect(d.sendBytes.bind(d, 'dummyStr')).to.throw(Error);    
+    const expectedStr = "AT$SS=";
+  });
+
+  it('should use the right AT command to send the bytes', function(done) {
+    let d = new Driver('test');
+    const b = Buffer.from('Hello');
+    let mock = SerialportMock.getLastInstance();
+    mock.simulatePortOpen();
+    d.sendBytes(b).then(function() {
+      const expectedStr = `AT$SS=${b.toString('hex')}`;
+      expect(mock.getLastTx()).to.be.eql(expectedStr);
+      done();
+    }).catch(done);
+    // delay the reply so we have time to record the write
+    setTimeout(() => mock.simulateRx('OK'), 20);  
+  });
+});
