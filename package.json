@@ -13,9 +13,12 @@
   "author": "rudylacrete",
   "license": "MIT",
   "dependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "proxyquire": "^1.7.11",
-    "serialport": "^4.0.7"
+    "chai": "3.5.0",
+    "mocha": "3.2.0",
+    "proxyquire": "1.7.11",
+    "serialport": "4.0.7"
+  },
+  "engines": {
+    "node" : ">=6.10"
   }
 }
