@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "driver for td12xx sigfox modules",
   "main": "index.js",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/rudylacrete/sigfox-td12xx-driver"
+  },
   "scripts": {
     "test": "mocha --reporter spec"
   },
