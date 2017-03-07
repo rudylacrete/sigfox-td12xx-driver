@@ -13,7 +13,7 @@ The module require node.js to be >= 6.10.
 
 # Usage
 
-Basically, you just need to require the module and instanciate the driver with the good port name:
+Basically, you just need to require the module and instanciate the driver with the proper port name:
 
 ```
 const Driver = require('sigfox-td12xx-driver');
