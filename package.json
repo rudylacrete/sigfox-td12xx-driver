@@ -1,5 +1,5 @@
 {
-  "name": "sigfox-td12xx",
+  "name": "sigfox-td12xx-driver",
   "version": "1.0.0",
   "description": "driver for td12xx sigfox modules",
   "main": "index.js",
