@@ -4,7 +4,7 @@
   "description": "driver for td12xx sigfox modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "sigfox",
@@ -13,6 +13,9 @@
   "author": "rudylacrete",
   "license": "MIT",
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.11",
     "serialport": "^4.0.7"
   }
 }
